@@ -66,6 +66,12 @@ const App = () => {
       <div className="pattern" />
 
       <div className="wrapper">
+        <div className="flex flex-row items-center justify-center">
+          <h1 className="text-4xl text-gradient flex flex-row items-center justify-center gap-4 font-bold italic font-title title-gradient">
+            <img src="./favicon.png" alt="" className="h-10 w-10" />
+            ReactFlix
+          </h1>
+        </div>
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>

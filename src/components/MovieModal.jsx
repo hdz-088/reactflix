@@ -57,9 +57,21 @@ const MovieModal = ({ movieId, onClose }) => {
                 className="rounded-xl w-full mask-b-from-20% mask-b-to-80%"
               />
             </div>
-            <h2 className="text-2xl font-bold mb-4 mt-[-55px]">
-              {movieDetails.title}
-            </h2>
+            <div className="flex flex-row items-center justify-between mt-[-55px] mb-4">
+              <h2 className="text-2xl font-bold font-title">
+                {movieDetails.title}
+              </h2>
+              <div className="rating flex items-center gap-1">
+                <img src="./star.svg" alt="Star Icon" className="w-4 h-4" />
+                <p>
+                  {movieDetails.vote_average
+                    ? movieDetails.vote_average.toFixed(1)
+                    : "N/A"}
+                  <span> </span>(
+                  {movieDetails.vote_count ? movieDetails.vote_count : "N/A"})
+                </p>
+              </div>
+            </div>
             <p className="mb-2 text-light-300">{movieDetails.overview}</p>
             <p>
               <strong>Release Date:</strong> {movieDetails.release_date}

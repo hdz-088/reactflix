@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @import "tailwindcss";
@@ -25,7 +30,7 @@
 
 @theme {
   --color-primary: #030014;
-
+  --font-title: Poppins, serif;
   --color-light-100: #cecefb;
   --color-light-200: #a8b5db;
 
@@ -42,13 +47,13 @@
 
 @layer base {
   body {
-    font-family: "DM Sans", serif;
+    font-family: "Poppins", serif;
     font-optical-sizing: auto;
     background: #030014;
   }
 
   h1 {
-    @apply mx-auto max-w-4xl text-center text-5xl font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
+    @apply mx-auto max-w-4xl text-center text-5xl font-dm-sans  font-bold leading-tight tracking-[-1%] text-white sm:text-[64px] sm:leading-[76px];
   }
 
   h2 {
@@ -165,6 +170,10 @@
 
 @utility text-gradient {
   @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
+}
+
+@utility title-gradient {
+  @apply bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-clip-text text-transparent;
 }
 
 @utility fancy-text {
