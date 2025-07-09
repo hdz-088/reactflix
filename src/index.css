@@ -3,6 +3,26 @@
 
 @import "tailwindcss";
 
+.movie-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(
+    600px circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.1),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.movie-card:hover::before {
+  opacity: 1;
+}
+
 @theme {
   --color-primary: #030014;
 
@@ -102,7 +122,8 @@
   }
 
   .movie-card {
-    @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
+    /* @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10 cursor-pointer; */
+    @apply relative bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10 cursor-pointer overflow-hidden transition-all duration-300;
 
     & img {
       @apply rounded-lg h-auto w-full;
