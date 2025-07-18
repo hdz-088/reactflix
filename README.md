@@ -1,5 +1,7 @@
 # ReactFlix
 
+ReactFlix is a movie browsing web application built with React.js and powered by the TMDB API. It allows users to view trending movies, search for specific titles, and explore detailed information about selected movies, including posters, descriptions, and ratings. The app features a clean UI, dynamic routing, and responsive design for a seamless user experience.
+
 ## Installation
 
 ```bash
