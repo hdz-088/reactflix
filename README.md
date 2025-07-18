@@ -1,12 +1,46 @@
-# React + Vite
+# ReactFlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
 
-Currently, two official plugins are available:
+```bash
+git clone https://github.com/hdz-088/reactflix.git
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+cd reactflix
+```
 
-## Expanding the ESLint configuration
+```bash
+pnpm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+pnpm run dev
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Make your changes.
+4. Commit your changes (git commit -m 'Add some feature').
+5. Push to the branch (git push origin feature-branch).
+6. Open a Pull Request.
+
+## Attributes
+
+- Flaticons
+- Google Fonts
+- TMDB API
+
+## 🫱🏻‍🫲🏻 Connect With Me
+
+- Portfolio: <a href="https://hdzala.vercel.app/?ref=github">Portfolio</a>
+- Other Projects: <a href="https://hdz-projectvault.vercel.app/">Project Vault</a>
+- Email: <a href="mailto:hdz088@outlook.com">hdz088@outlook.com</a>
+- Instagram: <a href="https://instagram.com/hdz_088">hdz_088</a>
+- LinkedIn: <a href="https://linkedin.com/in/hdz088/">hdz088</a>
+
+---
